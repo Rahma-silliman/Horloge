@@ -1,15 +1,13 @@
-.time{
-   
+.time {
     width: 20rem;
     height: 20rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: linear-gradient(to right,rgba(255,255,255,.2),rgba(0,0,0,.2));;
     box-shadow: 0px 0 10px #0003;
     position: relative;
-   
+
 }
 
 /* .number{
@@ -29,13 +27,86 @@ body {
     background-color: aqua;
 }
 
-.hand{
-    display: flex;
-    justify-content: center;
+.hand {
+    text-align: center;
 }
+
 .number {
     position: absolute;
-
+    transform: rotate(calc(30deg*var(--n)));
+    inset: 12px;
     font-family: 'Roboto', sans-serif;
-   
+}
+
+.text {
+    position: absolute;
+    font-weight: 700;
+}
+
+.clock-center {
+    position: absolute;
+    padding: 0.2rem;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid;
+    z-index: 5;
+}
+
+.clock-hour {
+    position: absolute;
+    height: 5rem;
+    width: 0.2rem;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    bottom: 9.4rem;
+}
+
+.hour {
+    background-color: antiquewhite;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: -0.3rem;
+    top: -2.5rem;
+    box-shadow: 0px 2px 15px 0px;
+}
+
+.clock-minute {
+    background-color: black;
+    position: absolute;
+    height: 4rem;
+    width: 0.2rem;
+    bottom: 9.7rem;
+}
+
+.minute {
+    background-color: black;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: -0.3rem;
+    top: -2.5rem;
+    box-shadow: 0px 2px 15px 0px;
+}
+
+.clock-seconde {
+    background-color: red;
+    position: absolute;
+    width: 0.2rem;
+    height: 3rem;
+    bottom: 9.7rem;
+}
+
+.seconde {
+    background-color: red;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: -0.3rem;
+    top: -2.5rem;
+    box-shadow: 0px 2px 15px 0px;
 }
